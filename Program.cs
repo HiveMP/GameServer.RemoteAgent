@@ -79,8 +79,8 @@ namespace HiveMP.GameServer.RemoteAgent
                         return;
                     }
 
-                    if (!labels.ContainsKey("projectId") &&
-                        !labels.ContainsKey("gameServerClusterId") &&
+                    if (!labels.ContainsKey("projectId") ||
+                        !labels.ContainsKey("gameServerClusterId") ||
                         !labels.ContainsKey("gameServerId"))
                     {
                         return;
